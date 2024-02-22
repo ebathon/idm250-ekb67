@@ -7,11 +7,7 @@
     <title>Document</title>
     <?php wp_head();?>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href=""> Home </a>
-            <a href=""> About </a>
-            <a href=""> Contact </a>
-        </nav>
-    </header>
+    <?php
+    get_template_part('components/header'); ?>
