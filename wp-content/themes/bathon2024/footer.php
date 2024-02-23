@@ -1,5 +1,5 @@
 <footer class= "flex items-center justify-center">
-    <p class= "mr-2">&copy; 2024 | IDM 250</p>
+    <p class= "mr-2">&copy; <?php echo date('Y'); ?>  | IDM 250</p>
     <?php wp_nav_menu([
         'theme_location'=> 'footer'
     ]); ?>
