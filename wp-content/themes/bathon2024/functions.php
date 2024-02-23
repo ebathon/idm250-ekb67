@@ -25,6 +25,9 @@ function register_theme_menus()
     register_nav_menus([
         
             'primary'=> 'Primary Menu',
-            'footer' => 'Footer Menu'
+            'footer' => 'Footer Menu',
+            '404-menu'=> '404 Menu'
         ]);
 }
+
+add_action('init', 'register_theme_menus');
