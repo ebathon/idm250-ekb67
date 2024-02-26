@@ -6,7 +6,6 @@
 <ul class="paraleft">
     <li>3300 Baring Street Philadelphia, PA 19104</li>
     <li>Phone (215) 387-6065</li>
-    <a href="https://www.cornerstonebandb.com"><li>Website: https://www.cornerstonebandb.com </li></a></li>
     <a href="info@cornerstonebandb.com"><li>Email: info@cornerstonebandb.com</li></a>
 </ul>
 </div>

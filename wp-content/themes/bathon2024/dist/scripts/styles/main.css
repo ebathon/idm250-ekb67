@@ -32,15 +32,15 @@ p{
     background-color:#ECEEE4; 
     display:flex;
     justify-content: space-between;
-    gap: 10%;
+    gap: 25%;
     align-items: center;
 }
 
-.menu {
+.menu-primary-2024-menu-container{
     width: 100%;
 }
 
-.menu ul{
+#menu-primary-2024-menu{
     font-family: 'Avenir';
     font-size: 20px;   
     display: flex;
@@ -48,8 +48,7 @@ p{
     flex-direction: row;
     flex-wrap:wrap-reverse;
     justify-content: space-between;
-    padding: 20px 10px 20px 10px
-    ;
+    padding: 20px 10px 20px 10px;
 }
 
 a{
@@ -106,3 +105,44 @@ hr{
 footer h1{
     color: white;
 }
+
+@media screen and (max-width: 1160px) {
+.navbar{
+    display: flex;
+    flex-direction: column;  
+} 
+#menu-primary-2024-menu{ 
+    gap: 10%;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+#menu-primary-2024-menu{
+    flex-direction: column;
+ }
+
+h1{
+    font-size: 36px;
+}
+a{
+    font-size: 12px;
+}
+footer h1{
+    white-space: inherit;
+    font-size: 20px;
+}
+footer ul{
+    font-size: 12px;
+}
+
+footer p{
+    font-size: 12px;
+}
+footer{
+    line-height: 18px;
+}
+footer div:first-child {
+display: block;
+}}

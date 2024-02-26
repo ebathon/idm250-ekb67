@@ -4,7 +4,7 @@
         <h1>The Cornerstone</h1>
     </a>
     <?php wp_nav_menu([
-        'theme_location'=> 'main'
+        'theme_location'=> 'primary'
     ]); ?>
 
     </header>
