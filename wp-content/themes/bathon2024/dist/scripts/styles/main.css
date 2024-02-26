@@ -1,4 +1,108 @@
 *{
-    box-sizing: border-box;
-  
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+}
+@font-face{
+    font-family: 'Avenir', sans-serif;
+    src: url("https://fonts.cdnfonts.com/css/avenir");
+}
+@font-face{
+    font-family: 'Breadley Sans', sans-serif;
+    src: url("https://fonts.cdnfonts.com/s/53771/BreadleySansRegular-MVyEB.woff");
+    src: url("https://fonts.cdnfonts.com/css/breadley-sans")
+}
+
+h1{
+    font-family: 'Breadley Sans';
+    font-size: 48px;
+    font-weight: 300; 
+    color: #721214;
+    white-space: nowrap;
+}
+
+p{
+    font-family: 'Avenir';
+    font-size: 20px;   
+}
+
+.navbar{
+    background-color:#ECEEE4; 
+    display:flex;
+    justify-content: space-between;
+    gap: 10%;
+    align-items: center;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu ul{
+    font-family: 'Avenir';
+    font-size: 20px;   
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px
+    ;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+footer{
+    background-color: #293C1D;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer div:first-child{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+footer > div:last-of-type{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    flex-direction: column;
+}
+#menu-footer-menu {
+    padding: 0;
+}
+
+.paraleft {
+    text-align: left;
+}
+
+footer ul{
+    font-family: 'Avenir';
+    font-size: 20px;  
+    list-style: none;
+    color: white;   
+}
+footer a{
+    color: white;
+}
+hr{
+    margin: 0 auto;
+    
+    display: block;
+    height: 0px; /* adjust the height to reduce the line thickness */
+    width: 75%; /* adjust the width to reduce the line length */
+    color: #ECEEE4;
+  }
+footer h1{
+    color: white;
 }
