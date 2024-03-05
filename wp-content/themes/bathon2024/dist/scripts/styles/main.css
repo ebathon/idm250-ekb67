@@ -23,9 +23,19 @@ h1{
     white-space: nowrap;
 }
 
+h2{
+    font-family: 'Avenir';
+    font-size: 28px;  
+    font-weight: 400; 
+
+}  
+
+
 p{
     font-family: 'Avenir';
-    font-size: 20px;   
+    font-size: 20px; 
+    line-height: 28px; 
+    padding: 2rem 4rem; 
 }
 
 .navbar{
@@ -50,11 +60,59 @@ p{
     justify-content: space-between;
     padding: 20px 10px 20px 10px;
 }
+.wp-block-image.aligncenter {
+    width: 100%;
+}
+.figure{
+    margin:0
+}
+.wp-block-image{
+    width: 100%;
+}
 
+p.has-background{
+    padding: 2em 0em 3em 0em;
+}
+
+.wp-block-gallery{
+    /* display:flex;
+   
+    margin: 1rem 1rem; */
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+   
+}
+.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+    margin: 1rem;
+    width: fit-content;
+}
+
+h2.wp-block-heading{
+padding-top: 3rem;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption{
+font-family: 'Breadley Sans';
+font-size: 36px;
+font-weight: 300; 
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .3) 80%, transparent);
+
+    padding: 8px 8px 8px;
+}
+/* .wp-block-image{ */
+    /* margin: 0.5rem; */
+/* } */
 a{
 text-decoration: none;
 color: black;
 }
+
+
 
 footer{
     background-color: #293C1D;
@@ -62,7 +120,7 @@ footer{
     text-align: center;
     justify-content: space-between;
     line-height: 30px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -106,6 +164,17 @@ footer h1{
     color: white;
 }
 
+/* single.php */
+
+h2.wp-block-heading {
+padding: 2rem 4rem;
+}
+
+.wp-block-image img {
+    width:60%;
+    text-align: center;
+}
+
 @media screen and (max-width: 1160px) {
 .navbar{
     display: flex;
@@ -146,3 +215,9 @@ footer{
 footer div:first-child {
 display: block;
 }}
+
+
+/* front page */
+.wp-block-image{
+    width: 100%;
+}

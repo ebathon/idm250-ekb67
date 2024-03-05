@@ -1,6 +1,8 @@
 <?php get_header(); ?>
-<h1 class= "">
-<?php echo get_the_title();?>
-   <h1>Front Page </h1>
-   <p> This is a front-page.php template. </p>  
+
+<!-- <?php echo get_the_title();?> -->
+<?php echo get_the_content()?>
+<?php
+?>
+   
    <?php get_footer(); ?>
