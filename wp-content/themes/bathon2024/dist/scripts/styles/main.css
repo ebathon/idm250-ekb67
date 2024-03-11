@@ -174,8 +174,10 @@ padding: 2rem 4rem;
     width:60%;
     text-align: center;
 }
-
-@media screen and (max-width: 1160px) {
+.figure{
+    width:60%;
+    text-align: center;  
+}
 .navbar{
     display: flex;
     flex-direction: column;  
@@ -218,6 +220,7 @@ display: block;
 
 
 /* front page */
-.wp-block-image{
-    width: 100%;
+
+.wp-block-image img {
+    width:100%
 }
