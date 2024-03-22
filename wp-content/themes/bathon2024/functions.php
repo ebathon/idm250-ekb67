@@ -55,11 +55,11 @@ add_post_type_support('page', 'excerpt');
 // add_post_type_support( 'gallery', 'date');
 
 function my_custom_post_gallery() {
-$post_type_name = 'gallery';
+$post_type_name = 'room';
 $post_type_options = [
   'labels' => [
-    'name' => __('galleries'),
-    'singular_name' => __('gallery')
+    'name' => __('rooms'),
+    'singular_name' => __('room')
   ],
   'taxonomies' => array('category', 'post_tag'),
   'public' => true,

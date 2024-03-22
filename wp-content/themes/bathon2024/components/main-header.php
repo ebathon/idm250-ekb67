@@ -8,3 +8,7 @@
     ]); ?>
 
     </header>
+    <?php if (!is_front_page()) {
+    echo '<h2>' . get_the_title() . '</h2>';
+}
+?>
