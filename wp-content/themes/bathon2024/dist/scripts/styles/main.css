@@ -272,6 +272,18 @@ h4.wp-block-heading {
     .navbar{
         flex-direction: column;
     }
+    .wp-block-group{
+        display: flex;
+    }
+    .wp-block-group h2{
+        padding: 1rem 4rem 1rem 1rem;
+        text-align: left;
+        font-size: 26px;
+        text-decoration: underline;
+    }
+    .wp-block-group img{
+        padding: 1rem 1rem 4rem 4rem;
+    }
 
 }   
 @media screen and (max-width: 1122px) {
@@ -324,22 +336,38 @@ footer{
 }
 footer div:first-child {
 display: block;
-}}
+}
 
 .pgnotfound h1{
     font-size: 55px;
+    color: black;
+    margin: 1rem;
     }
 
  .pgnotfound h3{
         font-size: 24px;
         line-height: 35px;
+        margin-top: 1.5rem;
     }
+    
 
 .pgnotfound{
     padding: 10rem;
 }
 
-
+.wp-block-group{
+    display: flex;
+}
+.wp-block-group h2{
+    padding: 1rem 4rem 1rem 1rem;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.wp-block-group img{
+    padding: 1rem 1rem 4rem 4rem;
+}
+}
 
 @media screen and (max-width: 720px) {
 
@@ -390,6 +418,7 @@ footer p{
 
 .pgnotfound h1{
     font-size: 40px;
+    color: black;
 }
 
 .pgnotfound h3{
@@ -400,8 +429,20 @@ footer p{
 .pgnotfound{
     padding: 12rem 8rem;
 }
-}
 
+.wp-block-group{
+    display: inline;
+}
+.wp-block-group h2{
+    padding: 1rem 4rem 2rem 4rem;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.wp-block-group img{
+    padding: 2rem 4rem 1rem 4rem;
+}
+}
 
 
 @media screen and (max-width: 550px) {
@@ -443,13 +484,26 @@ footer p{
     }
     .pgnotfound h1{
         font-size: 32px;
+        color: black;
     }
 
     .pgnotfound h3{
         font-size: 14px;
         line-height: 24px;
     }
+    .wp-block-group{
+        display: inline;
     }
+    .wp-block-group h2{
+        padding: 1rem 2rem 2rem 2rem;
+        text-align: left;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .wp-block-group img{
+        padding: 2rem 2rem 1rem 2rem;
+    }
+}
 
 
 /* front page */
@@ -459,7 +513,12 @@ img.wp-image-36{
 }
 
 /* 404 page*/
+
 .pgnotfound{
-    /* padding:10rem; */
     text-align: center;
+}
+/* listing page*/
+.wp-block-image .post{
+    max-width: 50%;
+
 }
