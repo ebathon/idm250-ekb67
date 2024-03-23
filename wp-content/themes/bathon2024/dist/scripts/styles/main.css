@@ -53,7 +53,6 @@ ul{
     font-size: 20px;  
     font-weight: 400; 
     line-height: 35px;
-    padding: 2rem 10rem 2rem 10rem;
 }  
 .wp-block-media-text__content ul{
     font-family: 'Avenir';
@@ -266,6 +265,21 @@ h4.wp-block-heading {
 }
 
 
+@media screen and (max-width: 1600px){
+    ul{
+        padding: 2rem 10rem;  
+    }  
+    .wp-block-group h2{
+        padding: 1rem 5rem 2rem 5rem;
+        text-align: left;
+        font-size: 26px;
+        text-decoration: underline;;
+    }
+    .wp-block-group img{
+        padding: 2rem 5rem;
+       
+        }
+}
 
 
 @media screen and (max-width: 1300px) {
@@ -273,18 +287,24 @@ h4.wp-block-heading {
         flex-direction: column;
     }
     .wp-block-group{
-        display: flex;
+        display: inline;
     }
     .wp-block-group h2{
-        padding: 1rem 4rem 1rem 1rem;
+        padding: 1rem 5rem 2rem 5rem;
         text-align: left;
-        font-size: 26px;
-        text-decoration: underline;
+        font-size: 24px;
+        text-decoration: underline;;
     }
     .wp-block-group img{
-        padding: 1rem 1rem 4rem 4rem;
+        padding: 2rem 5rem;
+        
+        }
+    ul{
+        padding: 2rem 10rem;  
     }
-
+    iframe{
+        padding: 1rem 5rem 1rem 5rem;
+    }
 }   
 @media screen and (max-width: 1122px) {
 
@@ -356,19 +376,28 @@ display: block;
 }
 
 .wp-block-group{
-    display: flex;
+    display: inline;
 }
 .wp-block-group h2{
-    padding: 1rem 4rem 1rem 1rem;
+    padding: 1rem 5rem 2rem 5rem;
     text-align: left;
     font-size: 20px;
-    text-decoration: underline;
+    text-decoration: underline;;
 }
 .wp-block-group img{
-    padding: 1rem 1rem 4rem 4rem;
-}
-}
+    padding: 2rem 5rem;
+    width: 100%;
+    }
 
+ul{
+    padding:2rem 5rem 2rem 5rem;
+    }
+
+
+iframe{
+    padding: 1rem 2rem 1rem 2rem;
+}
+}
 @media screen and (max-width: 720px) {
 
 .navbar{
@@ -442,6 +471,14 @@ footer p{
 .wp-block-group img{
     padding: 2rem 4rem 1rem 4rem;
 }
+ul{
+    padding:2rem 5rem 2rem 5rem;
+    }
+
+    iframe{
+        max-width: fit-content;
+        padding: 1rem 2rem 1rem 2rem
+    }
 }
 
 
@@ -494,6 +531,10 @@ footer p{
     .wp-block-group{
         display: inline;
     }
+    .wp-block-group ul{
+    padding:2rem 5rem 2rem 5rem
+    }
+    
     .wp-block-group h2{
         padding: 1rem 2rem 2rem 2rem;
         text-align: left;
@@ -502,6 +543,10 @@ footer p{
     }
     .wp-block-group img{
         padding: 2rem 2rem 1rem 2rem;
+    }
+    iframe{
+        display: hidden;
+        width: min-content;
     }
 }
 
